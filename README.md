@@ -9,7 +9,7 @@ A Power BI case study analyzing **defaulted loans** to identify systemic drivers
 
 ## Background
 
-Financial institutions often rely heavily on **credit scores and product segmentation** to manage default risk. However, persistent default cycles in this portfolio suggested that traditional risk signals were failing to capture **post-disbursement repayment stress**.
+Diaz Financial institutions often rely heavily on **credit scores and product segmentation** to manage default risk. However, persistent default cycles in this portfolio suggested that traditional risk signals were failing to capture **post-disbursement repayment stress**.
 
 This case study analyzes **Defaulted loans only**, with the goal of identifying **systemic risk drivers** and providing **practical recommendations** that improve underwriting quality, pricing accuracy, and portfolio resilience.
 
