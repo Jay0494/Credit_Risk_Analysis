@@ -1,155 +1,155 @@
-# Credit Risk Analysis 
+# 📄 GitHub Project Description
 
-## Executive Summary
+**Credit Risk Assessment – Defaulted Loans Analysis**
 
-This report presents a **credit risk analysis strictly filtered to defaulted loans**, with the objective of enabling management to understand **who is defaulting, under what conditions, and why**, so that corrective actions can be targeted with precision.
+A Power BI case study analyzing **defaulted loans** to identify systemic drivers of credit risk. The project demonstrates how affordability stress, pricing sensitivity, and underwriting gaps—not borrower quality—drive recurring defaults, and proposes data-backed reforms to reduce future credit losses.
 
-Within a total loan portfolio valued at **$6.56M**, there are **257 defaulted loans**, representing a **17.1% default rate**. Default occurrences show recurring spikes over time with **no sustained downward trend**, indicating that defaults are **systemic rather than incidental**.
+---
+# 📌 Case Study: Credit Risk Assessment – Defaulted Loans Analysis
 
-Patterns observed across borrower profiles, loan structures, pricing bands, and tenors reveal **structural weaknesses in underwriting standards, affordability assessment, and post-disbursement monitoring**.
+## Background
+
+Financial institutions often rely heavily on **credit scores and product segmentation** to manage default risk. However, persistent default cycles in this portfolio suggested that traditional risk signals were failing to capture **post-disbursement repayment stress**.
+
+This case study analyzes **Defaulted loans only**, with the goal of identifying **systemic risk drivers** and providing **practical recommendations** that improve underwriting quality, pricing accuracy, and portfolio resilience.
 
 ---
 
-## Portfolio Snapshot
+## Problem Statement
 
-* **Total portfolio value:** $6.56M
-* **Number of defaulted loans:** 257
-* **Default rate:** 17.1%
+Despite a reasonable **61.7% on-time repayment rate**, the portfolio experienced a **17.1% default rate** with recurring spikes over time.
 
-### Defaulted Loans by Product
+Key business questions:
 
-* Personal Loans: 67
-* Mortgage Loans: 64
-* Auto Loans: 64
-* Commercial Loans: 62
+* Why are borrowers with **strong income and credit profiles** defaulting?
+* Are defaults driven by specific products, or are they **portfolio-wide**?
+* What changes would **materially reduce future defaults**?
 
 ---
 
-## Key Insights
+## Approach
 
-### 1. Product Distribution of Defaults
+I conducted a **focused default-only analysis** using an interactive Power BI dashboard to:
 
-Defaults are **almost evenly distributed across all loan products**.
+* Isolate defaulted loans from the broader portfolio
+* Analyze borrower characteristics (income, age, credit score)
+* Evaluate loan structures (product, interest rate, tenure)
+* Identify recurring time-series patterns
+* Translate insights into **decision-ready recommendations**
 
-**Insight:**
-No single product category is responsible for the default problem. This confirms the issue is **portfolio-wide**, pointing to gaps in overall credit governance rather than isolated product failures.
-
----
-
-### 2. Salary Profile of Defaulters
-
-Default concentration is highest among **higher-income borrowers**:
-
-* 46,170+ → 12.0%
-* 33,449–46,169 → 3.3%
-* 20,727–33,448 → 1.2%
-* 8,008–20,726 → 0.8%
-
-**Insight:**
-Defaults are driven by **high loss severity rather than poor income access**. This suggests over-leveraging, weak affordability stress testing, or underestimation of existing financial commitments among high-earning borrowers.
+This approach ensured findings were **actionable**, not descriptive.
 
 ---
 
-### 3. Credit Score Characteristics
+## Key Findings
 
-Defaults are concentrated in **mid-to-high credit score bands**:
+### 1. Defaults Are Portfolio-Wide
 
-* 576–713 → 9.0%
-* 714+ → 8.1%
-* 438–575 → 0.4%
-* 300–437 → 0.4%
+Defaults were **evenly distributed across all loan products**.
 
-**Insight:**
-Credit score alone is an **insufficient risk filter**. Repayment stress emerges post-disbursement, highlighting the need for behavioral and affordability-based risk assessment.
+**Implication:**
+The issue is not product design, but **credit governance and underwriting consistency**.
 
 ---
 
-### 4. Interest Rate Exposure
+### 2. High-Income Borrowers Drive Loss Severity
 
-Defaulted loans cluster in **moderate-to-high interest rate bands**, with the highest exposure in:
+The highest default concentration occurred among **higher-income borrowers**.
 
-* 6.0–6.9%
-* Followed by: 2.0–2.9%, 8.0–8.9%, and 4.0–4.9%
-
-**Insight:**
-Interest rate sensitivity is a key driver of defaults. As repayment costs increase, default risk rises even among borrowers with strong credit profiles.
+**Implication:**
+Defaults stem from **over-leveraging and affordability misjudgment**, not income access.
 
 ---
 
-### 5. Loan Tenor Profile
+### 3. Credit Scores Fail Post-Disbursement
 
-Defaults are most common in:
+Most defaulters had **mid-to-high credit scores**.
 
-* 4-year loans → 5.3%
-* 1-year loans → 4.9%
-* 2-year loans → 3.8%
-* 3-year loans → 3.6%
-
-**Insight:**
-Default risk peaks in **mid-tenor loans**, suggesting cumulative repayment pressure rather than immediate or long-term exposure alone.
+**Implication:**
+Credit scores alone do not capture **repayment stress over time**.
 
 ---
 
-### 6. Age Profile of Defaulters
+### 4. Interest Rates Amplify Default Risk
 
-Defaults are concentrated among **economically active age groups**:
+Defaults clustered in **moderate-to-high interest bands**, peaking at **6.0%–6.9%**.
 
-* 42–48 → 5.2%
-* 49–55 → 5.2%
-* 28–34 → 4.5%
-* 35–41 → 3.0%
-
-**Insight:**
-Defaults are driven by income volatility, financial obligations, and external economic pressures rather than age-related risk.
+**Implication:**
+Risk was **mispriced**, increasing repayment burden beyond borrower capacity.
 
 ---
 
-### 7. Time-Series Default Behavior
+### 5. Repayment Fatigue Drives Defaults
 
-Default activity shows **recurring spikes across years** with no sustained improvement trend.
+Defaults peaked in **2-year and 4-year loan tenors**.
 
-**Insight:**
-The pattern is **structural and recurring**, indicating inconsistent underwriting quality and weak early-warning systems across origination periods.
+**Implication:**
+Risk accumulates through **repayment fatigue**, not immediate shock.
+
+---
+
+### 6. Structural, Repeatable Default Patterns
+
+Default spikes recurred across multiple years with **no sustained improvement**.
+
+**Implication:**
+Weak early-warning systems allowed arrears to mature into defaults.
+
+---
+
+## Business Impact
+
+### Financial Impact
+
+* **17.1% default rate** materially reduced portfolio profitability
+* Higher-income defaults resulted in **elevated loss severity**
+* Expected yield underperformed in moderate-to-high interest bands
+
+---
+
+### Risk & Capital Impact
+
+* Increased **Expected Credit Loss (ECL)** provisions
+* Lower **risk-adjusted return on capital (RAROC)**
+* Reduced effectiveness of product-level risk controls
+
+---
+
+### Operational Impact
+
+* Increased collections workload and recovery costs
+* Late intervention allowed preventable defaults to crystallise
+
+---
+
+### Strategic Impact
+
+* False confidence in portfolio quality due to strong borrower profiles
+* High probability of **repeat default cycles** without reform
 
 ---
 
 ## Recommendations
 
-### 1. Rebuild Underwriting Beyond Credit Scores
-
-* Integrate affordability, debt-to-income, and cash-flow stress testing into approval decisions.
-* Limit exposure concentration among high-salary but highly leveraged borrowers.
-
-### 2. Risk-Based Pricing and Tenor Controls
-
-* Reassess pricing structures within the **6.0%–9.9% interest rate bands**.
-* Apply tighter approval thresholds and enhanced reviews for **4-year loan tenors**.
-
-### 3. Default Prevention Through Early Signals
-
-* Monitor behavioral indicators such as missed payments, partial payments, and repayment delays.
-* Trigger proactive borrower engagement before accounts transition into full default.
-
-### 4. Product-Neutral Risk Governance
-
-* Apply consistent credit risk controls across all loan products, as defaults are evenly distributed and not product-specific.
+* Integrate **affordability stress testing** and debt-to-income metrics into underwriting
+* Apply **risk-based pricing** and enhanced review for high-risk tenors
+* Deploy **early-warning indicators** for proactive borrower engagement
+* Enforce **product-neutral credit governance** across the portfolio
 
 ---
 
-## Conclusion
+## Outcome
 
-When analyzed exclusively through the lens of defaulted loans, the evidence clearly shows that defaults are **not confined to low-income, low-credit, or single-product borrowers**. Instead, they are driven by **affordability stress, interest rate pressure, and structural underwriting gaps**.
-
-The recurring nature of defaults confirms the need for **systemic reform**, rather than isolated corrective actions.
+This analysis reframed default risk from a **borrower quality issue** to a **systemic underwriting and pricing problem**, enabling management to focus on **structural fixes** rather than reactive collections.
 
 ---
 
-## Next Steps
+## Skills Demonstrated
 
-* Conduct **default vintage analysis** to identify high-risk origination periods.
-* Redesign underwriting models to incorporate affordability and behavioral risk factors.
-* Establish a **default-focused monitoring dashboard** tracking borrower attributes, loan structure, and pricing risk.
-* Use insights from defaulted loans to recalibrate future lending policies and prevent repeat default outcomes.
+* Credit Risk & Portfolio Analysis
+* Power BI (DAX, KPIs, trend analysis)
+* Business Insight Translation
+* Executive & Risk Committee Reporting
 
 ---
 
