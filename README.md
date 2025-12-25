@@ -3,7 +3,7 @@
 **Credit Risk Assessment – Defaulted Loans Analysis**
 
 A Power BI case study analyzing **defaulted loans** to identify systemic drivers of credit risk. The project demonstrates how affordability stress, pricing sensitivity, and underwriting gaps—not borrower quality—drive recurring defaults, and proposes data-backed reforms to reduce future credit losses.
-[View the interactive Power BI dashboard](https://drive.google.com/drive/folders/1-AMqs22ngqPXsxgNepEGxVbdKvmc3nk3?usp=sharing)
+[View Project Files and Report](https://drive.google.com/drive/folders/1-AMqs22ngqPXsxgNepEGxVbdKvmc3nk3?usp=sharing)
 
 ---
 # 📌 Case Study: Credit Risk Assessment – Defaulted Loans Analysis
