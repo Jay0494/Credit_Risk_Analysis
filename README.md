@@ -1,4 +1,4 @@
-# 📄 GitHub Project Description
+# 📄 Project Description
 
 **Credit Risk Assessment – Defaulted Loans Analysis**
 
